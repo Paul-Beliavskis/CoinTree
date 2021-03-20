@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinTree.Api", "CoinTree.Api.csproj", "{D7E8FF51-124A-4429-9D25-F0B08EAF6BFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinTree.Api", "CoinTree.Api\CoinTree.Api.csproj", "{D7E8FF51-124A-4429-9D25-F0B08EAF6BFF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinTree.Api.Unit.Tests", "CoinTree.Api.Unit.Tests\CoinTree.Api.Unit.Tests\CoinTree.Api.Unit.Tests.csproj", "{BD993C92-A018-4AB1-AA9E-6E6118ED9905}"
 EndProject
