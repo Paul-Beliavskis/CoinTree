@@ -33,9 +33,14 @@ The source reactJS files where changes can be made to the files served up to the
 ## Exception handling
 Exceptions can be thrown from anywhere using custom exceptions and handling them in the exception middleware pipeline. If an unhandled exception occurs (which let's hope it doesn't) then the worst case happens which a 500 is returned, error is logged and a standard error model is returned nice and clean.
 
+## Scalability
+To ensure threads are freed up to handle more requests, I used async/await so we avoid thread starvation issues. Also I pass a cancelation token all the way through to ensure that if a request is canceled, it immediately frees up resources on the server.
+
+
 ## Final thoughts
 
 If the project was bigger I would consider breaking it down into Api, Application, Infrastructure, Domain and persistance layers. This would ensure it is easier to test and maintain.
+
 
 # Test project
 
