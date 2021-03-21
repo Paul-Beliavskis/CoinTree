@@ -27,6 +27,8 @@ This folder is home to all the application logic such as ochestrating calls to t
 
 **Interfaces** - Normally would hold intefaces that are implemented by the Infrastructure layer (adhearing to clean architecture) which would make it easy to swap
 
+**Policies** - Here I define policies that can be applied for API calls. The policy that I have setup in for the HttpClient ensures that when a request failes it will be retried at random intevals 3 times before it fails. This ensures that if there are multiple instances of the same app, the calls are not being made at the same time increases chances of success if the server we are requesting data from is overloaded.
+
 ### UI
 The source reactJS files where changes can be made to the files served up to the frontend. It is only the built files that get transfered wwwroot folder in the API folder.
 
@@ -35,7 +37,6 @@ Exceptions can be thrown from anywhere using custom exceptions and handling them
 
 ## Scalability
 To ensure threads are freed up to handle more requests, I used async/await so we avoid thread starvation issues. Also I pass a cancelation token all the way through to ensure that if a request is canceled, it immediately frees up resources on the server.
-
 
 ## Final thoughts
 
