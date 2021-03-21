@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getCoinStatsAsync = async (coin: String) => {
 try{
-    var itemList = await axios.get(`https://cointreetest.azurewebsites.net/api/coins/${coin}`);
+    var itemList = await axios.get(`/api/coins/${coin}`);
 
     return itemList;
 }catch(e)

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Net;
-
-namespace CoinTree.Api.ViewModels
+﻿namespace CoinTree.Api.ViewModels
 {
     public class ErrorModel
     {
